@@ -1,0 +1,12 @@
+.center {
+  margin-left: 20px;
+}
+
+.text {
+  text-align: center;
+}
+
+a {
+  padding: 5px;
+  text-decoration: none;
+}
