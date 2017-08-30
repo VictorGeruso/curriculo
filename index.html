@@ -26,24 +26,16 @@
       <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-              <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#barra">
-                <span class="sr-only">Alternar Menu</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
               <a href="index.html" class="navbar-brand">Curriculum Vitae</a>
             </div><!-- fim do navbar-header -->
-            <div class="navbar-collapse collapse" id="barra">
-              <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right">
               <li>
                 <button style="margin-top: 7px;" type="button" class="btn btn-danger" data-toggle="modal" data-target="#janela">
                   <span class="glyphicon glyphicon-ok"></span>
-                  Vote
+                  Dê a sua opinião!
                 </button>
               </li>
-              </ul>
-            </div>
+            </ul>
         </div><!-- fim do container barra de navegação -->
       </nav><!-- fim da barra de navegação -->
     </header><!-- fim do cabeçalho -->
@@ -51,7 +43,7 @@
   <article>
     <div class="container">
       <div class="row">
-        <form class="modal fade" id="janela">
+        <form action="http://formulario-ucsal.appspot.com/DadosFormulario" method="post" class="modal fade" id="janela">
           <div class="modal-dialog modal-lg">
               <div class="modal-content">
                   <!-- Cabeçalho -->
@@ -64,13 +56,8 @@
                   <!-- Corpo -->
                   <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nome" placeholder="Informe o seu nome"/>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Informe o seu email"/>
-                    </div>
-                    <div class="form-group">
-                      <textarea class="form-control" row="3" id="opiniao" placeholder="Dê a sua opinião sobre   esta página"></textarea>
+                      <input type="hidden" name="site" value="https://victorgeruso.github.io/curriculo/" />
+                      <input type="text" name="texto" class="form-control" placeholder="Dê a sua opinião sobre esta página" />
                     </div>
                   </div>
                   <!-- rodapé -->
